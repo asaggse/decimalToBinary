@@ -1,3 +1,6 @@
+#include <stdio.h>
+
+// Function to convert a decimal number to binary
 void decimalToBinary(int n)
 {
     // If the number is zero, return
@@ -13,7 +16,12 @@ void decimalToBinary(int n)
     printf("%d", remainder);
 }
 
-// You can call this function to convert a decimal number to binary like this:
+int main()
+{
+    int decimal = 10; // Decimal number to convert
 
-int decimal = 10;
-decimalToBinary(decimal);
+    printf("Binary equivalent of %d: ", decimal);
+    decimalToBinary(decimal);
+
+    return 0;
+}
